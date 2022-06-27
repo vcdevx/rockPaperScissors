@@ -4,9 +4,47 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
-        <script type="text/javascript" src="script.js"></script>
+        <script src="https://kit.fontawesome.com/fd4e57a54c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <title>Rock, Paper, Scissors</title>
     </head>
     <body>
-
+        <section class="top-section">
+            <div class="header">
+                <h1>Rock Paper Scissors</h1>
+            </div>
+        </section>
+        <section class="game-section">
+            <div class="select-buttons">
+            <button class="btn-select" id="btnRock">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </button>
+            <button class="btn-select" id="btnPaper">
+                <i class="fa-solid fa-hand"></i>
+            </button>
+            <button class="btn-select" id="btnScissors">
+                <i class="fa-solid fa-hand-scissors"></i>
+            </button>
+            </div>
+            </section>
+        <section class="score-section">
+            <div class="player-score">
+                <h2>Player Score:</h2>
+                <p id="playerScoreCount"></p>
+            </div>
+            <div class="computer-score"> 
+                <h2>Computer Score:</h2>
+                <p id="computerScoreCount"></p>
+            </div>
+        </section>
+        <section class="results-section">
+            <div id="results">
+                <button id="btnReset">Reset !</button>
+                <p id="resultsText"></p>
+            </div>
+        </section>
     </body>
+    <script async type="text/javascript" src="script.js"></script>
 </html>
